@@ -3,8 +3,7 @@ package com.tw.test;
 import com.tw.car.Car;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static junit.framework.Assert.assertEquals;
 
 /**
  * Created with IntelliJ IDEA.
