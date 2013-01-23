@@ -8,33 +8,18 @@ package com.tw.car;
  * To change this template use File | Settings | File Templates.
  */
 public class Status {
-    protected String status = "已熄火";
+    protected String status;
     
-    public void stepGas() {
-        if (status == "已熄火") {
-            return;
-        }
-
-        if (status == "已启动") {
-            status = "已空转";
-        }
-
-        if (status == "已挂档") {
-            status = "已开始移动";
-        }
+    public Status stepGas() {
+        return this;
     }
 
-    public void gear() {
-        if (status == "已熄火") {
-            return;
-        }
-        if (status == "已启动") {
-            status = "已挂档";
-        }
+    public Status gear() {
+        return this;
     }
 
-    public void fire() {
-        status = "已启动";
+    public Status fire() {
+        return this;
     }
 
     public String display() {

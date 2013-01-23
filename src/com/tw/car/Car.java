@@ -15,15 +15,15 @@ public class Car {
     }
 
     public void stepGas() {
-        status.stepGas();
+        status = status.stepGas();
     }
 
     public void gear() {
-        status.gear();
+        status = status.gear();
     }
 
     public void fire() {
-        status.fire();
+        status = status.fire();
     }
 
 }

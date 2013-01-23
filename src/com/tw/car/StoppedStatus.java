@@ -8,7 +8,12 @@ package com.tw.car;
  * To change this template use File | Settings | File Templates.
  */
 public class StoppedStatus extends Status {
-
     public StoppedStatus() {
+        status = "已熄火";
     }
+
+    public Status fire() {
+        return new StartedStatus();
+    }
+
 }
